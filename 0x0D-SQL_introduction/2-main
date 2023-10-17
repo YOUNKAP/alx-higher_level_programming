@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+# Run bash script
+
+cat 2-remove_database.sql | sudo mysql -u root -p
+
+cat 0-list_databases.sql | sudo mysql -u root -p

@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+# Run bash script
+
+#Request database name from user
+echo "enter the db name"
+#Read database name
+read db_name
+#Create db if not exixts
+cat 1-create_database_if_missing.sql | sudo mysql -u root -p
+#List tables in the dbcat 1-create_database_if_missing.sql | sudo mysql -u root -p $db_name
+cat 3-list_tables.sql | sudo mysql -u root -p $db_name
+# Create the firsy tables
+cat 4-first_table.sql | sudo mysql -u root -p $db_name

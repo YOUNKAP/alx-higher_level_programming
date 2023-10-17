@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+# Run bash script
+
+#Request database name from user
+echo "enter the db name"
+#Read database name
+read db_name
+#List tables in danaste
+# cat 3-list_tables.sql | sudo mysql -u root -p mysql
+cat 3-list_tables.sql | sudo mysql -u root -p $db_name

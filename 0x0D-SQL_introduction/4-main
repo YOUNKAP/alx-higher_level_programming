@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+# Run bash script
+#List db
+cat 0-list_databases.sql |  sudo mysql -u root -p
+#Create db "hbtn_0c_0" if not exists
+cat 1-create_database_if_missing.sql | sudo mysql -u root -p 
+#List tables in the db "hbtn_0c_0"
+cat 3-list_tables.sql |  sudo mysql -u root -p hbtn_0c_0
+#Create first table "first_table" in the db "hbtn_0c_0"
+cat 4-first_table.sql | sudo mysql -u root -p hbtn_0c_0
+#List tables in the db "hbtn_0c_0"
+cat 3-list_tables.sql |  sudo mysql -u root -p hbtn_0c_0
