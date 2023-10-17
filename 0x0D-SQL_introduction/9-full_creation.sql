@@ -6,6 +6,6 @@ CREATE TABLE IF NOT EXISTS `second_table`(
 );
 -- Insert values into the table 'second_tables'
 INSERT INTO `second_table` VALUES(1,"John",10);
-INSERT INTO `second_table` VALUES(89,"Alex",3);
-INSERT INTO `second_table` VALUES(89,"Bob",14);
-INSERT INTO `second_table` VALUES(89,"Goerge",8);
+INSERT INTO `second_table` VALUES(2,"Alex",3);
+INSERT INTO `second_table` VALUES(3,"Bob",14);
+INSERT INTO `second_table` VALUES(4,"Goerge",8);
