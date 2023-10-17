@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+# Run bash script
+
+cat 0-list_databases.sql | sudo mysql -u root -p

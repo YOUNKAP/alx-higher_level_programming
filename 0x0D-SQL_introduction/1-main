@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+# Run bash script
+
+cat 1-create_database_if_missing.sql | sudo mysql -u root -p
