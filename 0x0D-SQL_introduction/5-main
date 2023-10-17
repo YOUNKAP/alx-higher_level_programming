@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+# Run bash script
+#List db
+cat 5-full_table.sql |  sudo mysql -u root -p hbtn_0c_0
