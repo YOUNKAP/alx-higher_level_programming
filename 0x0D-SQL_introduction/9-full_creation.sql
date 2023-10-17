@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS `second_table`(
 	`score` INT
 );
 -- Insert values into the table 'second_tables'
-INSERT INTO `second_table` VALUES(1,"John",10);
-INSERT INTO `second_table` VALUES(2,"Alex",3);
-INSERT INTO `second_table` VALUES(3,"Bob",14);
-INSERT INTO `second_table` VALUES(4,"Goerge",8);
+INSERT INTO `second_table` (`id`, `name`, `score`) VALUES(1,"John",10);
+INSERT INTO `second_table` (`id`, `name`, `score`) VALUES(2,"Alex",3);
+INSERT INTO `second_table` (`id`, `name`, `score`) VALUES(3,"Bob",14);
+INSERT INTO `second_table` (`id`, `name`, `score`) VALUES(4,"George",8);
