@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+# Run bash script
+cat 6-states.sql | sudo mysql -u root -p
+echo 'INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas");'  | sudo mysql -u root -p hbtn_0d_usa
+echo 'SELECT * FROM states;' | sudo mysql -u root -p hbtn_0d_usa
