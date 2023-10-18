@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+# Run bash script
+cat 0-privileges.sql | sudo mysql -u root -p
+echo "CREATE USER 'user_0d_1'@'localhost';" | sudo mysql -u root -p
+echo "GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost';"  | sudo mysql -u root -p
+cat 0-privileges.sql | sudo mysql -u root -p
