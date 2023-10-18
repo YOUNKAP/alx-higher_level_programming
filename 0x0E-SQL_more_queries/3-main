@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+# Run bash script
+cat 3-force_name.sql | sudo mysql -u root -p hbtn_0d_2
+echo 'INSERT INTO force_name (id, name) VALUES (89, "Best School");' | sudo mysql -u root -p hbtn_0d_2
+echo 'SELECT * FROM force_name;' | sudo mysql -u root -p hbtn_0d_2
+echo 'INSERT INTO force_name (id) VALUES (333);' | sudo mysql -u root -p hbtn_0d_2
+echo 'SELECT * FROM force_name;' | sudo mysql -u root -p hbtn_0d_2
