@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+# Run bash script
+cat 5-unique_id.sql  | sudo mysql -u root -p hbtn_0d_2
+echo 'INSERT INTO unique_id (id, name) VALUES (89, "Best School");'  | sudo mysql -u root -p hbtn_0d_2
+echo 'SELECT * FROM unique_id;'  | sudo mysql -u root -p hbtn_0d_2
+echo 'INSERT INTO unique_id (id, name) VALUES (89, "Best");' | sudo mysql -u root -p hbtn_0d_2
+echo 'SELECT * FROM unique_id;' | sudo mysql -u root -p hbtn_0d_2
