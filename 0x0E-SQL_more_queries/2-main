@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+# Run bash script
+cat 2-create_read_user.sql | sudo mysql -u root -p 
+cat 0-privileges.sql  | sudo mysql -u root -p 
